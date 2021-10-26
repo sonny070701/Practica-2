@@ -28,6 +28,7 @@ module Control
 localparam R_Type			 = 7'h33; 
 localparam I_Type_LOGIC  = 7'h13;
 localparam U_Type        = 7'h37;
+localparam SB_Type		 = 7'h63;
 
 reg [8:0] control_values;
 
@@ -36,6 +37,7 @@ always@(OP_i) begin
 		R_Type:					  control_values= 9'b001_00_0_000;
 		I_Type_LOGIC:  		  control_values= 9'b001_00_1_001;
 		U_Type:					  control_values= 9'b001_00_1_010;
+		SB_Type:					  control_values= 9'b100_10_1_000;	
 		
 		default:
 			control_values= 9'b000_00_000;

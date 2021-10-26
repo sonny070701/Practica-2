@@ -30,11 +30,15 @@ localparam ORI  = 4'b0011;
 localparam SLLI = 4'b0100;
 localparam SRLI = 4'b0101; 
 localparam AND	 = 4'b0110;
+localparam XOR  = 4'b0111;
+localparam BEQ  = 4'b1000;
+localparam BNE  = 4'b1001;
+localparam BLT  = 4'b1010;
    
    always @ (A_i or B_i or ALU_Operation_i)
      begin
 		case (ALU_Operation_i)
-			ADD:
+			ADD:                             //ADD | ADDI
 				ALU_Result_o = A_i + B_i;
 
 			SUB:
@@ -43,18 +47,29 @@ localparam AND	 = 4'b0110;
 			LUI:
 				ALU_Result_o = B_i << 12;
 			
-			ORI:
+			ORI:										//OR | ORI
 				ALU_Result_o = A_i | B_i;
 				
-			SLLI:
+			SLLI:										//SLL | SLLI
 				ALU_Result_o = A_i << B_i;
-				
-			SRLI:
+														
+			SRLI:										//SRL | SRLI
 				ALU_Result_o = A_i >> B_i;
 				
-			AND:
+			AND:										//AND | ANDI
 				ALU_Result_o = A_i & B_i;
+			
+			XOR:										//XOR | XORI
+				ALU_Result_o = A_i ^ B_i;
 				
+			BEQ:
+				ALU_Result_o = A_i - B_i;
+				
+			/*BNE:
+				ALU_Result_o = 
+				
+			BLT:
+				ALU_Result_o = */
 			
 	
 		default:
