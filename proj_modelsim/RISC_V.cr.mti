@@ -12,33 +12,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	MUXRegisterFile
 
-} {} {}} C:/PROJECTS/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v {1 {vlog -work work -stats=none C:/PROJECTS/RISC_V_Single_Cycle/src/RISC_V_Single_Cycle.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module RISC_V_Single_Cycle
-
-Top level modules:
-	RISC_V_Single_Cycle
-
 } {} {}} C:/PROJECTS/RISC_V_Single_Cycle/src/Multiplexer_2_to_1.v {1 {vlog -work work -stats=none C:/PROJECTS/RISC_V_Single_Cycle/src/Multiplexer_2_to_1.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Multiplexer_2_to_1
 
 Top level modules:
 	Multiplexer_2_to_1
-
-} {} {}} C:/PROJECTS/RISC_V_Single_Cycle/src/Control.v {1 {vlog -work work -stats=none C:/PROJECTS/RISC_V_Single_Cycle/src/Control.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Control
-
-Top level modules:
-	Control
-
-} {} {}} C:/PROJECTS/RISC_V_Single_Cycle/src/ALU.v {1 {vlog -work work -stats=none C:/PROJECTS/RISC_V_Single_Cycle/src/ALU.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module ALU
-
-Top level modules:
-	ALU
 
 } {} {}} C:/PROJECTS/RISC_V_Single_Cycle/src/Data_Memory.v {1 {vlog -work work -stats=none C:/PROJECTS/RISC_V_Single_Cycle/src/Data_Memory.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
@@ -82,25 +61,11 @@ Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 
 Top level modules:
 	PC_Register
 
-} {} {}} C:/PROJECTS/RISC_V_Single_Cycle/src/Program_Memory.v {1 {vlog -work work -stats=none C:/PROJECTS/RISC_V_Single_Cycle/src/Program_Memory.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module Program_Memory
-
-Top level modules:
-	Program_Memory
-
 } {} {}} C:/PROJECTS/RISC_V_Single_Cycle/src/Decoder_Register_File.v {1 {vlog -work work -stats=none C:/PROJECTS/RISC_V_Single_Cycle/src/Decoder_Register_File.v
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module Decoder_Register_File
 
 Top level modules:
 	Decoder_Register_File
-
-} {} {}} C:/PROJECTS/RISC_V_Single_Cycle/src/ALU_Control.v {1 {vlog -work work -stats=none C:/PROJECTS/RISC_V_Single_Cycle/src/ALU_Control.v
-Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
--- Compiling module ALU_Control
-
-Top level modules:
-	ALU_Control
 
 } {} {}}
