@@ -21,13 +21,19 @@ module Immediate_Unit
 
 
 
-always@(op_i) begin
-
-	if(op_i == 7'h13)
-		Immediate_o = {{20{Instruction_bus_i[31]}},Instruction_bus_i[31:20]};// I format
+always@(op_i, Instruction_bus_i) begin
+ 
+	if(op_i == 7'h13 | op_i == 7'h03 | op_i == 7'h67)
+		Immediate_o = {{20{Instruction_bus_i[31]}},Instruction_bus_i[31:20]};// I Logic || I format || I JAL
+		
+	if(op_i == 7'h37 | op_i == 7'h6F)
+		Immediate_o = {{12{Instruction_bus_i[31]}},Instruction_bus_i[31:12]};// U format || UJ format
+		
 	else
-		Immediate_o = 0;// U format
-end
+		Immediate_o = {{25{Instruction_bus_i[31]}},Instruction_bus_i[11:7]};  // S || SB format
+		
+	end
+
 
 
 endmodule // signExtend

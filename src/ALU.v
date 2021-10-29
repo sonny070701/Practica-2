@@ -34,6 +34,10 @@ localparam XOR  = 4'b0111;
 localparam BEQ  = 4'b1000;
 localparam BNE  = 4'b1001;
 localparam BLT  = 4'b1010;
+localparam SW   = 4'b1011;
+localparam LW   = 4'b1100;
+localparam JAL  = 4'b1101;
+localparam JALR = 4'b1110;
    
    always @ (A_i or B_i or ALU_Operation_i)
      begin
@@ -63,14 +67,26 @@ localparam BLT  = 4'b1010;
 				ALU_Result_o = A_i ^ B_i;
 				
 			BEQ:
-				ALU_Result_o = A_i - B_i;
+				ALU_Result_o = (A_i == B_i) ? 0: 1 ;
 				
-			/*BNE:
-				ALU_Result_o = 
-				
-			BLT:
-				ALU_Result_o = */
+			BNE:
+				ALU_Result_o = (A_i - B_i != 0) ? 0 : 1;
 			
+			BLT:
+				ALU_Result_o = (A_i < B_i) ? 0 : 1;
+			
+			SW:
+				ALU_Result_o = ( A_i + B_i ) /*- 32'h1001_0000 )*/ ;
+				
+			LW:
+				ALU_Result_o = ( A_i + B_i ) /*- 32'h1001_0000 )*/ ;
+				
+			JAL:
+				ALU_Result_o =  A_i;
+			
+			JALR:
+				ALU_Result_o = A_i + B_i;
+				
 	
 		default:
 			ALU_Result_o = 0;

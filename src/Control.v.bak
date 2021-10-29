@@ -25,13 +25,29 @@ module Control
 	output [2:0]ALU_Op_o
 );
 
+localparam R_Type			 = 7'h33; 
+localparam I_Type_LOGIC  = 7'h13;
+localparam U_Type        = 7'h37;
+localparam SB_Type		 = 7'h63;
+localparam S_Type		    = 7'h23;
+localparam I_Type			 = 7'h03;
+localparam UJ_Type		 = 7'h6F;
+localparam I_Type_J  	 = 7'h67;
+
 
 reg [8:0] control_values;
 
 always@(OP_i) begin
-	case(OP_i)//                          876_54_3_210
-
-
+	case(OP_i)//                          			876_54_3_210
+		R_Type:					  control_values= 9'b001_00_0_000;
+		I_Type_LOGIC:  		  control_values= 9'b001_00_1_001;
+		U_Type:					  control_values= 9'b001_00_1_010;
+		SB_Type:					  control_values= 9'b100_10_1_011;	
+		S_Type:					  control_values= 9'b001_10_0_100;
+		I_Type:					  control_values= 9'b010_11_0_101;
+		UJ_Type:					  control_values= 9'b010_11_1_110;
+		I_Type_J:			     control_values= 9'b011_10_0_111;
+		
 		default:
 			control_values= 9'b000_00_000;
 		endcase

@@ -1,8 +1,6 @@
 /******************************************************************
 * Description
-*	This is a register of 32-bit that corresponds to the PC counter. 
-*	This register does not have an enable signal.
-* Version:
+*	This the basic register that is used in the register file
 *	1.0
 * Author:
 *	Dr. José Luis Pizano Escalante
@@ -11,25 +9,26 @@
 * Date:
 *	16/08/2021
 ******************************************************************/
-
-module PC_Register
+module Register
 #(
-	parameter N=32
+	parameter N = 32
 )
 (
 	input clk,
 	input reset,
-	input  [N-1:0] Next_PC,
+	input enable,
+	input  [N-1:0] DataInput,
 	
 	
-	output reg [N-1:0] PC_Value
+	output reg [N-1:0] DataOutput
 );
 
 always@(negedge reset or posedge clk) begin
 	if(reset==0)
-		PC_Value <= 32'h0040000;
+		DataOutput <= 0;
 	else	
-		PC_Value<= Next_PC;
+		if(enable==1)
+			DataOutput<=DataInput;
 end
 
 endmodule

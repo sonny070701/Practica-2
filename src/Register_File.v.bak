@@ -75,10 +75,6 @@ Register_ra
 
 	
 Register
-#
-(
-	.initvalue(32'h1001_03FC)
-)
 Register_sp
 (
 	.clk(clk),

@@ -15,7 +15,7 @@
 module Program_Memory
 #
 (
-		parameter MEMORY_DEPTH = 32,
+	parameter MEMORY_DEPTH = 64,
 	parameter DATA_WIDTH = 32
 )
 (
@@ -31,7 +31,7 @@ assign real_address = {2'b0, Address_i[16:2]};
 
 	initial
 	begin
-		$readmemh("C:/PROJECTS/RISC_V_Single_Cycle/src/text.dat", rom);
+		$readmemh("C:/PROJECTS/PF/src/text.dat", rom);
 	end
 
 	always @ (real_address)
