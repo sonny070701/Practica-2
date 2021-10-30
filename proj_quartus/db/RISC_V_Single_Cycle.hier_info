@@ -1,6 +1,38 @@
 |RISC_V_Single_Cycle
 clk => clk.IN3
 reset => reset.IN2
+alu_result[0] << alu_result_w[0].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[1] << alu_result_w[1].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[2] << alu_result_w[2].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[3] << alu_result_w[3].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[4] << alu_result_w[4].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[5] << alu_result_w[5].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[6] << alu_result_w[6].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[7] << alu_result_w[7].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[8] << alu_result_w[8].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[9] << alu_result_w[9].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[10] << alu_result_w[10].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[11] << alu_result_w[11].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[12] << alu_result_w[12].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[13] << alu_result_w[13].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[14] << alu_result_w[14].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[15] << alu_result_w[15].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[16] << alu_result_w[16].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[17] << alu_result_w[17].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[18] << alu_result_w[18].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[19] << alu_result_w[19].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[20] << alu_result_w[20].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[21] << alu_result_w[21].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[22] << alu_result_w[22].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[23] << alu_result_w[23].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[24] << alu_result_w[24].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[25] << alu_result_w[25].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[26] << alu_result_w[26].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[27] << alu_result_w[27].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[28] << alu_result_w[28].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[29] << alu_result_w[29].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[30] << alu_result_w[30].DB_MAX_OUTPUT_PORT_TYPE
+alu_result[31] << alu_result_w[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |RISC_V_Single_Cycle|Control:CONTROL_UNIT
