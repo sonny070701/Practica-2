@@ -41,22 +41,14 @@ reg [10:0] control_values;
 
 always@(OP_i) begin
 	case(OP_i)//                          		  876_54_3_210
-									
-		
+								
 		R_Type:				control_values=11'b0_0_001_00_0_000;  // R
-		
 		I_Type_LOGIC:		control_values=11'b0_0_001_00_1_001;  // I logicas
-		
 		U_Type:				control_values=11'b0_0_001_00_1_010;  // LUI
-		
 		B_Type:				control_values=11'b0_0_100_00_0_011;  // BRANCHES
-		
 		S_Type:				control_values=11'b0_0_010_01_1_100;  // SW
-		
 		I_Type_L:			control_values=11'b0_0_011_10_1_101;  // LW
-		
 		J_Type:				control_values=11'b0_1_101_00_1_110;  // JAL	
-		
 		I_Type_J:			control_values=11'b1_1_001_00_1_111;  // JALR
 		
 		default:

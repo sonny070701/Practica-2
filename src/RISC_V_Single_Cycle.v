@@ -27,7 +27,9 @@ module RISC_V_Single_Cycle
 (
 	// Inputs
 	input clk,
-	input reset
+	input reset,
+	
+	output[31:0] alu_result
 
 );
 //******************************************************************/
@@ -314,4 +316,6 @@ MUX_PC_RD1
 	.Mux_Output_o(mux_to_ALU_w)
 
 );
+
+assign alu_result = alu_result_w;
 endmodule

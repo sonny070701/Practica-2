@@ -76,10 +76,10 @@ localparam JALR = 4'b1110;
 				ALU_Result_o = (A_i < B_i) ? 0 : 1;
 			
 			SW:
-				ALU_Result_o = ( A_i + B_i ) /*- 32'h1001_0000 )*/ ;
+				ALU_Result_o = ( A_i + B_i );
 				
 			LW:
-				ALU_Result_o = ( A_i + B_i ) /*- 32'h1001_0000 )*/ ;
+				ALU_Result_o = ( A_i + B_i );
 				
 			JAL:
 				ALU_Result_o =  A_i;

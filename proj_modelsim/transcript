@@ -1,0 +1,358 @@
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of And_2_1.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# Compile of Xor_2_1.v was successful.
+# 17 compiles, 0 failed with no errors.
+vsim -gui work.RISC_V_Single_Cycle_TB
+# vsim -gui work.RISC_V_Single_Cycle_TB 
+# Start time: 22:20:27 on Oct 28,2021
+# Loading work.RISC_V_Single_Cycle_TB
+# Loading work.RISC_V_Single_Cycle
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.Program_Memory
+# Loading work.Adder_32_Bits
+# Loading work.Multiplexer_2_to_1
+# Loading work.And_2_1
+# Loading work.Xor_2_1
+# Loading work.Register_File
+# Loading work.Decoder_Register_File
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.Immediate_Unit
+# Loading work.ALU_Control
+# Loading work.Data_Memory
+# Loading work.ALU
+do C:/PRACTICA_FINAL/proj_modelsim/wave.do
+# ** Error: invalid command name "Write_Data_i"
+# Error in macro C:\PRACTICA_FINAL\proj_modelsim\wave.do line 1
+# invalid command name "Write_Data_i"
+#     while executing
+# "Write_Data_i = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/PROGRAM_COUNTER/PC_Value
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram[7]
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram[6]
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram[5]
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram[4]
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram[3]
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram[2]
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram[1]
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram[0]
+run
+# ** Warning: (vsim-7) Failed to open readmem file "C:/PROJECTS/PRACTICA_FINAL/src/text.dat" in read mode.
+# No such file or directory. (errno = ENOENT)    : C:/PRACTICA_FINAL/src/Program_Memory.v(34)
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_TB/DUV/PROGRAM_MEMORY
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of And_2_1.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# Compile of Xor_2_1.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RISC_V_Single_Cycle_TB
+# Loading work.RISC_V_Single_Cycle
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.Program_Memory
+# Loading work.Adder_32_Bits
+# Loading work.Multiplexer_2_to_1
+# Loading work.And_2_1
+# Loading work.Xor_2_1
+# Loading work.Register_File
+# Loading work.Decoder_Register_File
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.Immediate_Unit
+# Loading work.ALU_Control
+# Loading work.Data_Memory
+# Loading work.ALU
+run
+# ** Warning: (vsim-PLI-3407) Too many data words read on line 65 of file "C:/PRACTICA_FINAL/src/text.dat". (Current address [64], address range [0:63])    : C:/PRACTICA_FINAL/src/Program_Memory.v(34)
+#    Time: 0 ps  Iteration: 0  Instance: /RISC_V_Single_Cycle_TB/DUV/PROGRAM_MEMORY
+run
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of And_2_1.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# Compile of Xor_2_1.v was successful.
+# 17 compiles, 0 failed with no errors.
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RISC_V_Single_Cycle_TB
+# Loading work.RISC_V_Single_Cycle
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.Program_Memory
+# Loading work.Adder_32_Bits
+# Loading work.Multiplexer_2_to_1
+# Loading work.And_2_1
+# Loading work.Xor_2_1
+# Loading work.Register_File
+# Loading work.Decoder_Register_File
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.Immediate_Unit
+# Loading work.ALU_Control
+# Loading work.Data_Memory
+# Loading work.ALU
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_CONTROL_UNIT/ALU_Op_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/A_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/B_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/clk
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Mem_Write_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Mem_Read_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Write_Data_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Address_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Read_Data_o
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/real_address
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/read_data_aux
+run
+restart
+run
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of And_2_1.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# Compile of Xor_2_1.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RISC_V_Single_Cycle_TB
+# Loading work.RISC_V_Single_Cycle
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.Program_Memory
+# Loading work.Adder_32_Bits
+# Loading work.Multiplexer_2_to_1
+# Loading work.And_2_1
+# Loading work.Xor_2_1
+# Loading work.Register_File
+# Loading work.Decoder_Register_File
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.Immediate_Unit
+# Loading work.ALU_Control
+# Loading work.Data_Memory
+# Loading work.ALU
+run
+restart
+run
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of And_2_1.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# Compile of Xor_2_1.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RISC_V_Single_Cycle_TB
+# Loading work.RISC_V_Single_Cycle
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.Program_Memory
+# Loading work.Adder_32_Bits
+# Loading work.Multiplexer_2_to_1
+# Loading work.And_2_1
+# Loading work.Xor_2_1
+# Loading work.Register_File
+# Loading work.Decoder_Register_File
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.Immediate_Unit
+# Loading work.ALU_Control
+# Loading work.Data_Memory
+# Loading work.ALU
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of And_2_1.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# Compile of Xor_2_1.v was successful.
+# 17 compiles, 0 failed with no errors.
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RISC_V_Single_Cycle_TB
+# Loading work.RISC_V_Single_Cycle
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.Program_Memory
+# Loading work.Adder_32_Bits
+# Loading work.Multiplexer_2_to_1
+# Loading work.And_2_1
+# Loading work.Xor_2_1
+# Loading work.Register_File
+# Loading work.Decoder_Register_File
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.Immediate_Unit
+# Loading work.ALU_Control
+# Loading work.Data_Memory
+# Loading work.ALU
+run
+vsim -gui work.RISC_V_Single_Cycle_TB
+# End time: 23:09:35 on Oct 28,2021, Elapsed time: 0:49:08
+# Errors: 0, Warnings: 1
+# vsim -gui work.RISC_V_Single_Cycle_TB 
+# Start time: 23:09:35 on Oct 28,2021
+# Loading work.RISC_V_Single_Cycle_TB
+# Loading work.RISC_V_Single_Cycle
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.Program_Memory
+# Loading work.Adder_32_Bits
+# Loading work.Multiplexer_2_to_1
+# Loading work.And_2_1
+# Loading work.Xor_2_1
+# Loading work.Register_File
+# Loading work.Decoder_Register_File
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.Immediate_Unit
+# Loading work.ALU_Control
+# Loading work.Data_Memory
+# Loading work.ALU
+# Compile of Adder_32_Bits.v was successful.
+# Compile of ALU.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of And_2_1.v was successful.
+# Compile of Control.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of Decoder_Register_File.v was successful.
+# Compile of Immediate_Unit.v was successful.
+# Compile of Multiplexer_2_to_1.v was successful.
+# Compile of MUX_Register_File.v was successful.
+# Compile of PC_Register.v was successful.
+# Compile of Program_Memory.v was successful.
+# Compile of Register.v was successful.
+# Compile of Register_File.v was successful.
+# Compile of RISC_V_Single_Cycle.v was successful.
+# Compile of RISC_V_Single_Cycle_TB.v was successful.
+# Compile of Xor_2_1.v was successful.
+# 17 compiles, 0 failed with no errors.
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Mem_Write_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Mem_Read_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Write_Data_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Address_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/Read_Data_o
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/real_address
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/ram
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/Data_Memory/read_data_aux
+add wave -position end sim:/RISC_V_Single_Cycle_TB/DUV/CONTROL_UNIT/*
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_CONTROL_UNIT/ALU_Op_i
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.RISC_V_Single_Cycle_TB
+# Loading work.RISC_V_Single_Cycle
+# Loading work.Control
+# Loading work.PC_Register
+# Loading work.Program_Memory
+# Loading work.Adder_32_Bits
+# Loading work.Multiplexer_2_to_1
+# Loading work.And_2_1
+# Loading work.Xor_2_1
+# Loading work.Register_File
+# Loading work.Decoder_Register_File
+# Loading work.Register
+# Loading work.MUXRegisterFile
+# Loading work.Immediate_Unit
+# Loading work.ALU_Control
+# Loading work.Data_Memory
+# Loading work.ALU
+run
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/A_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/B_i
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/ALU_UNIT/ALU_Result_o
+restart
+run
+add wave -position end  sim:/RISC_V_Single_Cycle_TB/DUV/PROGRAM_COUNTER/PC_Value
+restart
+run
+# End time: 23:29:42 on Oct 28,2021, Elapsed time: 0:20:07
+# Errors: 0, Warnings: 2
